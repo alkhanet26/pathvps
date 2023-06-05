@@ -1,0 +1,389 @@
+{
+  "log" : {
+    "access": "/var/log/xray/access.log",
+    "error": "/var/log/xray/error.log",
+    "loglevel": "info"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": "10001",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6",
+            "alterId": 0
+#vmess
+#@ uzinuale 2023-07-04
+},{"id": "0f4a2ec8-62c2-4ef1-ae12-7ab8547ddea6","alterId": 0,"email": "uzinuale"
+#@ oprekwe 2023-06-29
+},{"id": "8901d51c-d094-4695-bcdb-c3c18f30ddfc","alterId": 0,"email": "oprekwe"
+#@ dedot 2023-02-05
+},{"id": "2e42cc8f-c0fe-4fcb-81e2-6d690f163397","alterId": 0,"email": "dedot"
+#@ dedisuaan 2023-03-04
+},{"id": "7d6c1296-24bb-4c2e-bfab-830d5f7d76d7","alterId": 0,"email": "dedisuaan"
+          }
+        ]
+      },
+      "streamSettings":{
+        "network": "ws",
+        "wsSettings": {
+          "path": "/alk-vmess",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "10002",
+      "protocol": "vless",
+      "settings": {
+        "decryption":"none",
+        "clients": [
+          {
+            "id": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6"
+#vless
+#= apaatuh 2023-06-30
+},{"id": "9183d618-5ec3-49f5-b0ac-adc51b6c3320","email": "apaatuh"
+          }
+        ]
+      },
+      "streamSettings":{
+        "network": "ws",
+        "wsSettings": {
+          "path": "/alk-vless",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "10003",
+      "protocol": "trojan",
+      "settings": {
+        "decryption":"none",
+        "clients": [
+          {
+            "password": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6"
+#trojan
+#& cobadulu 2023-07-04
+},{"password": "03f00ee6-2248-4464-99af-9c540210ced8","email": "cobadulu"
+#& akumahapa 2023-06-30
+},{"password": "cd30aa47-2e0a-4b8d-bb34-ab187e58a885","email": "akumahapa"
+#& oprekdulu 2023-06-29
+},{"password": "1f349335-7e6c-4a0b-90d2-3208a10d118d","email": "oprekdulu"
+#& alknet 2023-06-27
+},{"password": "a7e0de1a-418b-4008-a278-30db6dd48a4e","email": "alknet"
+          }
+        ]
+      },
+      "streamSettings":{
+        "network": "ws",
+        "wsSettings": {
+          "path": "/alk-trojan",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "10006",
+      "protocol": "shadowsocks",
+      "settings": {
+        "clients": [
+            {
+              "method": "aes-128-gcm",
+              "password": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6"
+#shadowsocks
+            }
+          ],
+        "network": "tcp,udp"
+      },
+      "streamSettings":{
+        "network": "ws",
+        "wsSettings": {
+          "path": "/alk-ss",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "10005",
+      "protocol": "shadowsocks",
+      "settings": {
+        "method": "2022-blake3-aes-128-gcm",
+        "password": "phonG4SJz4bY2wPQvblUWw==",
+        "clients": [
+          {
+            "password": "JEaxa6h3KYTfICTHB7wGlA=="
+#shadowsocks2022
+          }
+        ],
+        "network": "tcp,udp"
+      },
+      "streamSettings":{
+        "network": "ws",
+        "wsSettings": {
+          "path": "/alk-ss2022",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "10006",
+      "protocol": "socks",
+      "settings": {
+        "auth": "password",
+        "accounts": [
+            {
+              "user": "private",
+              "pass": "server"
+#socks
+            }
+          ],
+        "udp": true,
+        "ip": "127.0.0.1"
+      },
+      "streamSettings":{
+        "network": "ws",
+        "wsSettings": {
+          "path": "/alk-socks5",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "20001",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6",
+            "alterId": 0
+#vmess-grpc
+#@ uzinuale 2023-07-04
+},{"id": "0f4a2ec8-62c2-4ef1-ae12-7ab8547ddea6","alterId": 0,"email": "uzinuale"
+#@ oprekwe 2023-06-29
+},{"id": "8901d51c-d094-4695-bcdb-c3c18f30ddfc","alterId": 0,"email": "oprekwe"
+#@ dedot 2023-02-05
+},{"id": "2e42cc8f-c0fe-4fcb-81e2-6d690f163397","alterId": 0,"email": "dedot"
+#@ dedisuaan 2023-03-04
+},{"id": "7d6c1296-24bb-4c2e-bfab-830d5f7d76d7","alterId": 0,"email": "dedisuaan"
+          }
+        ]
+      },
+      "streamSettings":{
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "alk-vmessgrpc",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "20002",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6",
+            "alterId": 0
+#vmess-grpc
+#@ uzinuale 2023-07-04
+},{"id": "0f4a2ec8-62c2-4ef1-ae12-7ab8547ddea6","alterId": 0,"email": "uzinuale"
+#@ oprekwe 2023-06-29
+},{"id": "8901d51c-d094-4695-bcdb-c3c18f30ddfc","alterId": 0,"email": "oprekwe"
+#@ dedot 2023-02-05
+},{"id": "2e42cc8f-c0fe-4fcb-81e2-6d690f163397","alterId": 0,"email": "dedot"
+#@ dedisuaan 2023-03-04
+},{"id": "7d6c1296-24bb-4c2e-bfab-830d5f7d76d7","alterId": 0,"email": "dedisuaan"
+          }
+        ]
+      },
+      "streamSettings":{
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "alk-vmessgrpc",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "20002",
+      "protocol": "vless",
+      "settings": {
+        "decryption":"none",
+        "clients": [
+          {
+            "id": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6"
+#vless-grpc
+#= apaatuh 2023-06-30
+},{"id": "9183d618-5ec3-49f5-b0ac-adc51b6c3320","email": "apaatuh"
+          }
+        ]
+      },
+      "streamSettings":{
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "alk-vlessgrpc",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "20003",
+      "protocol": "trojan",
+      "settings": {
+        "decryption":"none",
+        "clients": [
+          {
+            "password": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6"
+#trojan-grpc
+#& cobadulu 2023-07-04
+},{"password": "03f00ee6-2248-4464-99af-9c540210ced8","email": "cobadulu"
+#& akumahapa 2023-06-30
+},{"password": "cd30aa47-2e0a-4b8d-bb34-ab187e58a885","email": "akumahapa"
+#& oprekdulu 2023-06-29
+},{"password": "1f349335-7e6c-4a0b-90d2-3208a10d118d","email": "oprekdulu"
+#& alknet 2023-06-27
+},{"password": "a7e0de1a-418b-4008-a278-30db6dd48a4e","email": "alknet"
+          }
+        ],
+        "udp": true
+      },
+      "streamSettings":{
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "alk-trojangrpc",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "20004",
+      "protocol": "shadowsocks",
+      "settings": {
+        "clients": [
+            {
+              "method": "aes-128-gcm",
+              "password": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6"
+#shadowsocks-grpc
+            }
+          ],
+        "network": "tcp,udp"
+      },
+      "streamSettings":{
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "alk-ssgrpc",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "20005",
+      "protocol": "shadowsocks",
+      "settings": {
+        "method": "2022-blake3-aes-128-gcm",
+        "password": "phonG4SJz4bY2wPQvblUWw==",
+        "clients": [
+          {
+            "password": "JEaxa6h3KYTfICTHB7wGlA=="
+#shadowsocks2022-grpc
+          }
+        ],
+        "network": "tcp,udp"
+      },
+      "streamSettings":{
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "alk-ss2022grpc",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": "20006",
+      "protocol": "socks",
+      "settings": {
+        "auth": "password",
+        "accounts": [
+            {
+              "user": "private",
+              "pass": "server"
+#socks-grpc
+            }
+          ],
+        "udp": true,
+        "ip": "127.0.0.1"
+      },
+      "streamSettings":{
+        "network": "grpc",
+        "grpcSettings": {
+          "serviceName": "alk-socks5grpc",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
+    }
+  ]
+}
+
