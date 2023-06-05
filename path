@@ -1,0 +1,52 @@
+#!/bin/bash
+# Path: alk-path
+
+#path vmess
+cat > /usr/local/hidessh/vmess.txt << END
+/alk-vmess
+END
+#path vless
+cat > /usr/local/hidessh/vless.txt << END
+/alk-vless
+END
+#path trojan
+cat > /usr/local/hidessh/trojan.txt << END
+/alk-trojan
+END
+#path Shadowsocks
+cat > /usr/local/hidessh/ss.txt << END
+/alk-ss
+END
+#path Shadowsocks 2022
+cat > /usr/local/hidessh/ss2022.txt << END
+/alk-ss2022
+END
+#path socks
+cat > /usr/local/hidessh/socks5.txt << END
+/alk-socks5
+END
+
+#path vmess GPRC
+cat > /usr/local/hidessh/vmessgprc.txt << END
+alk-vmessgprc
+END
+#path vless GPRC
+cat > /usr/local/hidessh/vlessgprc.txt << END
+alk-vlessgprc
+END
+#path trojan GPRC
+cat > /usr/local/hidessh/trojangprc.txt << END
+alk-trojangprc
+END
+#path Shadowsocks GPRC
+cat > /usr/local/hidessh/ssgprc.txt << END
+alk-ssgprc
+END
+#path Shadowsocks 2022 GPRC
+cat > /usr/local/hidessh/ss2022gprc.txt << END
+alk-ss2022gprc
+END
+#path socks GPRC
+cat > /usr/local/hidessh/socks5gprc.txt << END
+alk-socks5gprc
+END
