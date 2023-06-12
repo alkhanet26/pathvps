@@ -2,22 +2,22 @@
 # Path: alk-path
 
 {
-echo -e "Downloading Binaries"
+echo "Downloading Binaries"
 sleep 3
 wget "https://raw.githubusercontent.com/alkhanet26/pathvps/main/config.json" -O /usr/local/etc/xray/config.json && chomd +x /usr/local/etc/xray/config.json
 wget "https://raw.githubusercontent.com/alkhanet26/pathvps/main/path" -O /root/path && chmod +x /root/path
 wget "https://raw.githubusercontent.com/alkhanet26/pathvps/main/xray.conf" -O /etc/nginx/conf.d/xray.conf && chmod +x /etc/nginx/conf.d/xray.conf
-echo -e "Finished Download"
+echo "Finished Download"
 sleep 3
 clear
-echo -e "Downloading PATH"
+echo "Downloading PATH"
 sleep 3
 sh /root/path && rm -r /root/path
 clear
-echo -e "Finished"
+echo "Finished"
 sleep 3
 clear
-echo -e "Rebooting VPS"
+echo "Rebooting VPS"
 sleep 5
 reboot
 }
