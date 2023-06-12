@@ -4,7 +4,6 @@
 {
 echo "Downloading Binaries"
 sleep 3
-wget "https://raw.githubusercontent.com/alkhanet26/pathvps/main/config.json" -O /usr/local/etc/xray/config.json && chomd +x /usr/local/etc/xray/config.json
 wget "https://raw.githubusercontent.com/alkhanet26/pathvps/main/path" -O /root/path && chmod +x /root/path
 wget "https://raw.githubusercontent.com/alkhanet26/pathvps/main/xray.conf" -O /etc/nginx/conf.d/xray.conf && chmod +x /etc/nginx/conf.d/xray.conf
 echo "Finished Download"
