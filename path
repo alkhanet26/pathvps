@@ -3,50 +3,50 @@
 
 #path vmess
 cat > /usr/local/hidessh/vmess.txt << END
-/alk-vmess
+/vmess-ws
 END
 #path vless
 cat > /usr/local/hidessh/vless.txt << END
-/alk-vless
+/vless-ws
 END
 #path trojan
 cat > /usr/local/hidessh/trojan.txt << END
-/alk-trojan
+/trojan-ws
 END
 #path Shadowsocks
 cat > /usr/local/hidessh/ss.txt << END
-/alk-ss
+/ss-ws
 END
 #path Shadowsocks 2022
 cat > /usr/local/hidessh/ss2022.txt << END
-/alk-ss2022
+/ss2022-ws
 END
 #path socks
 cat > /usr/local/hidessh/socks5.txt << END
-/alk-socks5
+/socks5-ws
 END
 
 #path vmess GPRC
 cat > /usr/local/hidessh/vmessgprc.txt << END
-alk-vmessgprc
+vmess-grpc
 END
 #path vless GPRC
 cat > /usr/local/hidessh/vlessgprc.txt << END
-alk-vlessgprc
+vless-grpc
 END
 #path trojan GPRC
 cat > /usr/local/hidessh/trojangprc.txt << END
-alk-trojangprc
+trojan-grpc
 END
 #path Shadowsocks GPRC
 cat > /usr/local/hidessh/ssgprc.txt << END
-alk-ssgprc
+ss-grpc
 END
 #path Shadowsocks 2022 GPRC
 cat > /usr/local/hidessh/ss2022gprc.txt << END
-alk-ss2022gprc
+ss2022-grpc
 END
 #path socks GPRC
 cat > /usr/local/hidessh/socks5gprc.txt << END
-alk-socks5gprc
+socks5-grpc
 END
