@@ -14,8 +14,7 @@
           {
             "id": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6",
             "alterId": 0
-#vmess
-            
+#vmess        
           }
         ]
       },
@@ -40,8 +39,6 @@
           {
             "id": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6"
 #vless
-#= apaatuh 2023-06-30
-},{"id": "9183d618-5ec3-49f5-b0ac-adc51b6c3320","email": "apaatuh"
           }
         ]
       },
@@ -66,7 +63,6 @@
           {
             "password": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6"
 #trojan
-
           }
         ]
       },
@@ -169,7 +165,6 @@
             "id": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6",
             "alterId": 0
 #vmess-grpc
-
           }
         ]
       },
@@ -194,7 +189,6 @@
             "id": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6",
             "alterId": 0
 #vmess-grpc
-
           }
         ]
       },
@@ -219,7 +213,6 @@
           {
             "id": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6"
 #vless-grpc
-
           }
         ]
       },
@@ -244,7 +237,6 @@
           {
             "password": "4f5e0f91-cb5d-4b37-bd36-92aca19894b6"
 #trojan-grpc
-
           }
         ],
         "udp": true
